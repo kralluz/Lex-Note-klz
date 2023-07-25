@@ -1,0 +1,21 @@
+body{
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 1% 2%;
+    box-shadow: 2px 1px 26px var(--color-grey-3);
+}
+
+main{
+    padding-top:3%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}

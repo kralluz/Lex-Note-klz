@@ -1,0 +1,65 @@
+@import '../../../styles/index.scss'; 
+
+.form__container {
+    width: 355px;
+    height: 434px;
+    border: 2px solid var(--color-grey);
+    padding: 24px 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
+
+        .label__description {
+            @include title2;
+        }
+
+        .input__description {
+            @include paragraph;
+            align-self: center;
+            width: 314px;
+            height: 52px;
+            color: var(--color-grey-3);
+            border-radius: 6px;
+            text-indent: 16px;
+            background-color: var(--color-grey);
+        }
+
+        //.label__value {}
+
+        .input__textarea {
+            @include paragraph;
+            align-self: center;
+            resize: none;
+            width: 314px;
+            height: 187px;
+            padding: 16px;
+            color: var(--color-grey-3);
+            border-radius: 6px;
+            border: none;
+            background-color: var(--color-grey);
+        }
+
+        .submitButton {
+            @include paragraph;
+            align-self: center;
+            background-color: var(--color-primary);
+            text-indent: 16px;
+            color: white;
+            width: 314px;
+            height: 49px;
+            top: 423px;
+            left: 137px;
+            border-radius: 255px;
+
+            &:hover {
+                background-color: var(--color-primary-hover);
+            }
+        }
+    }
+}
