@@ -3,10 +3,11 @@
 .sumary {
     display: flex;
     flex-direction: column;
+
     gap: 24px;
     width: 50%;
-    height: 434px;
     border: 2px solid var(--color-grey);
+    box-shadow: 0 0 12px rgb(168, 168, 168) ;
     border-radius: 6px;
     padding: 14px 12px;
 
@@ -38,44 +39,10 @@
         }
     }
 
-    .card__container {
+    .card__container{
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
-        padding-top: 8px;
-
-        .card__content {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            width: 350px;
-            height: 181px;
-            border-bottom: 3px solid var(--color-primary);
-
-            .card__title{
-                @include paragraphBold;
-            }
-
-            .card__text{
-                @include paragraph
-            }
-
-        }
-
-        .remove__note {
-            @include paragraph;
-            width: 104px;
-            height: 35px;
-            top: 402px;
-            left: 563px;
-            border-radius: 255px;
-            color: white;
-            background-color: var(--color-primary);
-
-            &:hover {
-                background-color: var(--color-primary-hover);
-            }
-        }
+        align-items: center;
+        gap: 16px;
     }
 }
