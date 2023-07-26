@@ -1,0 +1,15 @@
+@import "../../styles/index.scss";
+.label__description {
+    @include title2;
+}
+
+.input__description {
+    @include paragraph;
+    align-self: center;
+    width: 314px;
+    height: 52px;
+    color: var(--color-grey-3);
+    border-radius: 6px;
+    text-indent: 16px;
+    background-color: var(--color-grey);
+}

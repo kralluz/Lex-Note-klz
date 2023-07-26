@@ -1,0 +1,15 @@
+@import "../../styles/index.scss";
+
+
+.input__textarea {
+    @include paragraph;
+    align-self: center;
+    resize: none;
+    width: 314px;
+    height: 187px;
+    padding: 16px;
+    color: var(--color-grey-3);
+    border-radius: 6px;
+    border: none;
+    background-color: var(--color-grey);
+}
